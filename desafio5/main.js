@@ -111,6 +111,15 @@ function exercicio14(a, b){
     console.log(`A = ${a} e B = ${b}`);
 }
 
+const exercicio15 = (anoNascimento) =>{
+    let anoAtual = 2024;
+    let anosVividos = anoAtual - anoNascimento;
+    let mesesVividos = anosVividos * 12;
+    let diasVividos = mesesVividos * 30;
+
+    console.log(`Essa pessoa viveu ${anosVividos} anos, ${mesesVividos} meses e ${diasVividos} dias.`)
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -127,6 +136,7 @@ let valorSalarioUsuario = 25864.00;
 //exercicio11(0, 8, 5, 7, "Eduardo Carrilho");
 //exercicio12(100, 4);
 //exercicio13('Eduardo', 24);
-exercicio14(1,2);
+//exercicio14(1,2);
+exercicio15(2000);
 
 
