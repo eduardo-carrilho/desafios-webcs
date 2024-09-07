@@ -78,8 +78,10 @@ function exercicio9(peso, altura){
     }
 }
 
-function exercicio10(){
+function exercicio10(nota1, nota2, nota3){
+    let mediaFinal = (nota1 + nota2 + nota3)/3;
 
+    console.log(`A média final do aluno é ${mediaFinal}.`)
 }
 
 function exercicio11(nota1, nota2, nota3, nota4, nomeAluno){
@@ -102,7 +104,7 @@ let valorSalarioUsuario = 25864.00;
 //exercicio7(false, false)
 //exercicio8(3,2,1)
 //exercicio9(80,1.70);
-
+exercicio10(0, 8, 5)
 //exercicio11(0, 8, 5, 7, "Eduardo Carrilho")
 
 
