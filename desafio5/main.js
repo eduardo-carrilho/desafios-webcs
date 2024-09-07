@@ -120,6 +120,30 @@ const exercicio15 = (anoNascimento) =>{
     console.log(`Essa pessoa viveu ${anosVividos} anos, ${mesesVividos} meses e ${diasVividos} dias.`)
 }
 
+function exercicio16(a, b, c){
+    let condicao = false;
+
+    let lados = [a, b, c];
+    lados.sort();
+
+    if(lados[0] + lados[1] > lados[2]){
+        condicao = true;
+    }
+
+    if(condicao){
+        if(a == b && b == c){
+            console.log(`Esse é um triângulo equilátero.`);
+        }else if(a == b || b == c || c == a){
+            console.log(`Esse é um triângulo isósceles.`);
+        }else{
+            console.log(`Esse é um triângulo escaleno.`);
+        }
+    }else{
+        console.log(`Esse não é um triângulo válido.`);
+    }
+
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -137,6 +161,9 @@ let valorSalarioUsuario = 25864.00;
 //exercicio12(100, 4);
 //exercicio13('Eduardo', 24);
 //exercicio14(1,2);
-exercicio15(2000);
+//exercicio15(2000);
+exercicio16(20,20,2);
+
+
 
 
