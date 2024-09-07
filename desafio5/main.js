@@ -46,11 +46,11 @@ const exercicio6 = (valor) =>{
 
 function exercicio7(logico1, logico2){ 
     if(logico1 == true && logico2 == true){
-        console.log("Ambos são verdadeiros");
+        console.log("Ambos são verdadeiros.");
     }else if(logico1 == false && logico2 == false){
-        console.log("Ambos são falsos");
+        console.log("Ambos são falsos.");
     }else{
-        console.log("Um é verdadeiro e outro é falso");
+        console.log("Um é verdadeiro e outro é falso.");
     }
 }
 
@@ -58,7 +58,24 @@ function exercicio8(valor1, valor2, valor3){
     let numeros = [valor1, valor2, valor3];
     numeros.sort()
     numeros.reverse()
-    console.log(`Valores em ordem descrecente ${numeros[0]}, ${numeros[1]}, ${numeros[2]}`)
+    console.log(`Valores em ordem descrecente ${numeros[0]}, ${numeros[1]}, ${numeros[2]}.`)
+}
+
+function exercicio9(peso, altura){
+    let imc = peso/(altura*altura);
+    if(imc<18.5){
+        console.log("Abaixo do peso.");
+    }else if(imc > 18.6 && imc <24.9){
+        console.log("Peso ideal (parabéns).");
+    }else if(imc > 25 && imc <29.9){
+        console.log("Levemente acima do peso.");
+    }else if(imc > 30 && imc <34.9){
+        console.log("Obesidade grau I.");
+    }else if(imc > 35 && imc <39.9){
+        console.log("Obesidade grau II (severa).");
+    }else if(imc >= 40){
+        console.log("Obesidade grau III (mórbida).");
+    }
 }
 
 let valorSalarioMinimo = 1293.20;
@@ -72,6 +89,6 @@ let valorSalarioUsuario = 25864.00;
 //exercicio6(10);
 //exercicio7(false, false)
 //exercicio8(3,2,1)
-
+exercicio9(80,1.70);
 
 
