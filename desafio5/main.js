@@ -108,7 +108,7 @@ function exercicio14(a, b){
     let temp = a;
     a = b;
     b = temp;
-    console.log(a, b)
+    console.log(`A = ${a} e B = ${b}`);
 }
 
 let valorSalarioMinimo = 1293.20;
