@@ -85,6 +85,21 @@ function exercicio11(nota1, nota2, nota3, nota4, nomeAluno){
     console.log(mediaFinal >=7 ? `O aluno ${nomeAluno} teve média ${mediaFinal} e foi aprovado.` : `O aluno ${nomeAluno} teve média ${mediaFinal} e foi reprovado.`) ;
 }
 
+function exercicio12(valor, codigo){
+    if(codigo == 1){
+        valor*=0.85;
+        console.log(`Valor final pago será ${valor}.`);
+    }else if(codigo == 2){
+        valor*=0.9;
+        console.log(`Valor final pago será ${valor}.`);
+    }else if(codigo == 3){
+        console.log(`Valor final pago será ${valor}.`);
+    }else if(codigo == 4){
+        valor*=1.1;
+        console.log(`Valor final pago será ${valor}.`);
+    }
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -97,7 +112,8 @@ let valorSalarioUsuario = 25864.00;
 //exercicio7(false, false);
 //exercicio8(3,2,1);
 //exercicio9(80,1.70);
-exercicio10(0, 8, 5);
+//exercicio10(0, 8, 5);
 //exercicio11(0, 8, 5, 7, "Eduardo Carrilho");
+exercicio12(100, 4); 
 
 
