@@ -1,0 +1,233 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.header__logo__link{
+    text-decoration: none;
+}
+
+.header__logo__link__imagem{
+    height: 1.5em;
+}
+
+.header__logo__nome{
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.header__navigation{
+    display: flex;
+    gap: 1.5em;
+}
+
+.dropdown-content{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__navigation__item{
+    text-decoration: none;
+    color: rgb(84,92,108);
+}
+
+.header__logo__nome__titulo{
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.header__action{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+.header__action button{
+
+    letter-spacing: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5em 1.25em;
+    font-size: 1rem;
+}
+.header__action__login{
+    background-color: transparent;
+    border: 1px solid rgb(84,92,108);
+    color: black;
+    
+}
+
+.header__action__started{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    
+}
+.principal{
+    margin: 65px 20px;
+
+}
+
+.principal__descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(white,rgb(244,244,252));
+    padding-bottom: 2.5em;
+}
+
+.principal__descricao__integrations{
+    color: rgb(23, 49, 215);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.principal__descricao__headers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+.principal__descricao__headers__texto{
+
+    margin-top: 10px;
+}
+
+.principal__descricao__texto{
+
+    font-size: 1.25rem;
+    text-align: center;
+    color: rgb(103,110,128);
+}
+
+.principal__action button{
+    letter-spacing: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+    font-size: 1rem ;
+}
+
+.principal__action__contact{
+    background-color: white;
+    border: 1px solid rgb(84,92,108);
+    color: black;
+}
+
+.principal__action__started{
+    background-color: black;
+    border: 1px solid rgb(84,92,108);
+    color: white;
+
+}
+
+.principal__exemplos{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5em;
+}
+
+.principal__exemplos__empresas{
+    margin: 20px;
+    border: 2px solid rgba(242,243,247,255);
+    border-radius: 10px;
+ 
+}
+.principal__exemplos__empresas__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242,243,247,255);
+    height: 200px;
+    margin: 10px;
+    
+}
+
+.principal__exemplos__empresas__logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.principal__exemplos__empresas__descricao{
+    margin: 20px;
+}
+
+.principal__exemplos__empresas__descricao__titulo{
+    font-size: 20px;
+
+}
+
+.principal__exemplos__empresas__descricao__texto{
+    color: rgb(103,110,128);
+}
+
+.dropbtn{
+    display: none;
+}
+
+
+@media screen and (max-width: 735px) {
+
+    html{
+        font-size: 10px;
+    }
+    .dropbtn {
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0px;
+        border-radius: 5px;
+        padding: 0.5em 1.25em;
+        display: inline;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 0.75em 1em;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: black;
+      }
+
+      .principal__exemplos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 40px;
+    }
+}

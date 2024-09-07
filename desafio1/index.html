@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+<body>
+    <header>
+        <h1>Estrutura de um arquivo .html</h1>
+    </header>
+    <main>
+        <section>
+            <p>Um arquivo html é estruturado através de tags, existem 2 tags básicas que toda página html tem:</p>
+            <ul>
+                <li>&lt;head&gt;&lt;/head&gt; que contém informações funcionais sobre a página, como a tag &lt;title&gt;&lt;/title&gt; e tags &lt;meta&gt;. Ela não é visível quando a página é carregada. </li>
+                <li>&lt;body&gt;&lt;/body&gt; que contém todo o conteúdo visível da página.</li>
+            </ul>
+
+            <p>Além dessas duas tags, existem tagas que ajudam a organizar o código de maneira limpa além de ajudar na acessibilidade:</p>
+            <ul>
+                <li>&lt;header&gt;&lt;/header&gt; ela é usada para delimitar a parte de cima do código, onde fica a barra de navegação. </li>
+                <li>&lt;nav&gt;&lt;/nav&gt; ela é usada para delimitar a barra de navegação.</li>
+                <li>&lt;main&gt;&lt;/main&gt; ela é usada para delimitar o conteúdo principal da página.</li>
+                <li>&lt;section&gt;&lt;/section&gt; ela é usada para delimitar uma seção específica dentro da página.</li>
+                <li>&lt;aside&gt;&lt;/aside&gt; ela é usada para colocar um conteúdo do lado de outro.</li>
+                <li>&lt;footer&gt;&lt;/footer&gt; ela é usada para colocar os elementos de rodapé da página.</li>
+            </ul>
+        </section>
+
+        <section>
+            <p>Existem diversas outras tags que exercem variadas funções dentro da página. Alguns exemplos são:</p>
+            <h1>Tags de título que variam de &lt;h1&gt;&lt;/h1&gt; até &lt;h6&gt;&lt;/h6&gt;.</h1>
+            <h1>Esse é um exemplo de h1.</h1>
+            <h2>Esse é um exemplo de h2.</h2>
+            <h3>Esse é um exemplo de h3.</h3>
+            <h4>Esse é um exemplo de h4.</h4>
+            <h5>Esse é um exemplo de h5.</h5>
+            <h6>Esse é um exemplo de h6.</h6>
+        </section>
+
+        <section>
+            <h1>Tags de lista: </h1>
+            <ul>
+                <li>&lt;ul&gt;&lt;/ul&gt; ela é usada para criar uma lista sem ordem nos elementos. </li>
+                <li>&lt;ol&gt;&lt;/ol&gt; ela é usada para criar uma lista com ordem nos elementos.</li>
+                <li>&lt;li&gt;&lt;/li&gt; ela é criar um elemento dentro da lista.</li>
+            </ul>
+
+            <h2>Esse é um exemplo de ul.</h2>
+            <ul>
+                <li>Esse é um exemplo de li. </li>
+                <li>Esse é um exemplo de li.</li>
+                <li>Esse é um exemplo de li.</li>
+            </ul>
+
+            <h2>Esse é um exemplo de ol.</h2>
+            <ol>
+                <li>Esse é um exemplo de li. </li>
+                <li>Esse é um exemplo de li.</li>
+                <li>Esse é um exemplo de li.</li>
+            </ol>
+        </section>
+        <section>
+            <h1>A tag &lt;p&gt;&lt;/p&gt; que é usada para escrever um parágrafo.</h1>
+            <p>Esse é um exemplo da tag p, podemos escrever um parágrafo de qualquer tamanho que ele será carregado na página.</p>
+            <p>No ano de 2004 o Ministério da Educação encaminhou ao Congresso Nacional o Projeto de Lei 3962/2004 que previa a criação da Universidade Federal do ABC. Essa Lei foi sancionada pelo Presidente da República e publicada no Diário Oficial da União de 27 de julho de 2005, com o Nº 11.145 e datada de 26 de julho de 2005. O Projeto Acadêmico da UFABC procura levar em conta as mudanças no campo da ciência, propondo uma matriz interdisciplinar, caracterizada pela intercessão de várias áreas do conhecimento científico e tecnológico. O Projeto da Universidade ressalta a importância de uma formação integral, que inclui a visão histórica da nossa civilização e privilegia a capacidade de inserção social no sentido amplo. Além disso, o projeto tem como meta a criação de um ambiente acadêmico favorável ao desenvolvimento social, contribuindo para a busca de soluções para os problemas regionais e nacionais, a partir da cooperação com outras instituições de ensino e pesquisa e instâncias do setor industrial e do poder executivo, legislativo e judiciário.</p>
+        </section>
+        
+
+        <section>
+            <h1>A tag &lt;br&gt; que é usada para quebrar uma linha.</h1>
+            <p>Paragrafo 1</p>
+            <br><br><br><br><br>
+            <p>Paragrafo 2</p>
+        </section>
+        
+        <section>
+            <h1>Tags de formulário &lt;form&gt;&lt;/form&gt;</h1>
+            <p>É uma tag utilizada para abrir uma seção de formulário. Dentro dessa tag podemos ter as tags &lt;input&gt;&lt;/input&gt; para inserir dados e a tag &lt;label&gt;&lt;/label&gt; para dar nome aos inputs.</p>
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Input type text"><br>
+                
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" placeholder="Input type password"><br>
+            
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Input type age"><br>
+
+                <label for="checkbox">Input type checkbox:</label>
+                <input type="checkbox" id="checkbox" name="checkbox"><br>
+
+                <label for="color">Input type color</label>
+                <input type="color" id="color" name="color"><br>
+
+                <label for="range">Input type range disabled</label>
+                <input type="range" id="range" name="range" disabled><br>
+
+                <label for="File">Input type file com accept image/*</label>
+                <input type="file" id="file" name="file" accept="image/*"><br>
+
+                <label for="time">Input type time</label>
+                <input type="time" id="time" name="time"><br>
+
+                <label for="radio">Input type radio</label>
+                <input type="radio" id="radio" name="radio"><br>
+
+                <p>Além do input, podemos utilizar a tag &lt;select&gt;&lt;/select&gt; em conjunto com a tag &lt;option&gt;&lt;/option&gt; para ter outra forma de receber os dados de um usuário.</p>
+            
+                <select name="cursos">
+                    <option>Ciência da Computação</option>
+                    <option>Biotecnologia</option>
+                    <option>Física</option>
+                    <option>Química</option>
+                    <option>Matemática</option>
+                    <option>Engenharia da Informação</option>
+                    <option>Engenharia de Intrumentação, Automação e Robótica</option>
+                </select>
+
+                <p>E no final de tudo, podemos ter um botão para enviar essas informações do formulário.</p>
+            
+                <button type="submit">Enviar informações</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h1>Tags de imagens &lt;img&gt;&lt;/img&gt;</h1>
+            <p>São usadas para adicionar imagens a página.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CK_8Kmzn0cGeNsjfHKseAl2_gLtTQUHNwQ&s">
+
+        </section>
+
+        <section>
+            <h1>Tags de links &lt;a&gt;&lt;/a&gt;</h1>
+            <p>São usadas para gerar hyperlinks para outros endereços podendo ser dentro do própio site ou de algum site público.</p>
+            <a href="#">Esse é um exemplo de link padrão que leva ao mesmo site.</a>
+            <a href="https://www.ufabc.edu.br">Esse é um exemplo de link direciona a algum site externo. &lpar;site da ufabc&rpar;.</a><br>
+            <a href="https://www.instagram.com/ieeeufabc/" target="_blank">Esse é um exemplo de link que direciona a um site externo sem fechar a aba atual. &lpar;instagram IEEE&rpar;.</a><br>
+            <a href="" target="_top">Link para ir ao topo da página.</a><br>
+
+            <p>Podemos também utilizar links em conjunto com outras tags para deixa-las como links. Exemplo comuns disso é usar imagens ou botões como links.</p>
+            <a href="https://www.ufabc.edu.br" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CK_8Kmzn0cGeNsjfHKseAl2_gLtTQUHNwQ&s"></a><br>
+            <a href="" target="_top"><button>Clique aqui para ir ao topo da página.</button></a>
+        </section>
+
+        <section>
+            <h1>Tags de tabelas</h1>
+            <p>Podemos montar tabelas utilizando a tag &lt;table&gt;&lt;/table&gt;. Utlizamos a tag &lt;tr&gt;&lt;/tr&gt; para adicionar linhas, a tag &lt;th&gt;&lt;/th&gt; para montar o cabeçalho e a tag &lt;td&gt;&lt;/td&gt; para escrever os dados da tabela.</p>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Pontos</th>
+                    <th>Vitórias</th>
+                    <th>Empates</th>
+                    <th>Derrotas</th>
+                </tr>
+
+                <tr>
+                    <td>Corinthians</td>
+                    <td>72</td>
+                    <td>21</td>
+                    <td>9</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td>Palmeiras</td>
+                    <td>63</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>13</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Santos</td>
+                    <td>63</td>
+                    <td>17</td>
+                    <td>12</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Tags de citações </h1>
+            <p>Podemos fazer citações utilizando a tag &lt;blockquote&gt;&lt;/blockquote&gt; com o atributo cite.</p>
+            
+            <p>Uma citação do site da UFABC:</p>
+            <blockquote cite="https://www.ufabc.edu.br/a-ufabc/sobre">No ano de 2004 o Ministério da Educação encaminhou ao Congresso Nacional o Projeto de Lei 3962/2004 que previa a criação da Universidade Federal do ABC. Essa Lei foi sancionada pelo Presidente da República e publicada no Diário Oficial da União de 27 de julho de 2005, com o Nº 11.145 e datada de 26 de julho de 2005.</blockquote>
+        
+            <p>Podemos também utilizar citações curtas com a tag a qual insere aspas automaticamente.</p>
+            <p>Da apresentação sobre a UFABC: <q>O Projeto Acadêmico da UFABC procura levar em conta as mudanças no campo da ciência, propondo uma matriz interdisciplinar, caracterizada pela intercessão de várias áreas do conhecimento científico e tecnológico.</q></p>
+        </section>
+
+        <section>
+            <h1>Tags de customização de texto</h1>
+            <p>Temos tags que são feitas para customizar textos</p>
+            <p>&lt;strong&gt;&lt;/strong&gt; para deixar uma parte em <strong>negrito.</strong></p>
+            <p>&lt;i&gt;&lt;/i&gt; para deixar uma parte em <i>italico.</i></p>
+            <p>&lt;u&gt;&lt;/u&gt; para deixar uma parte <u>sublinhada.</u></p>
+            <p>&lt;small&gt;&lt;/small&gt; para deixar uma parte <small>menor.</small></p>
+            <p>&lt;mark&gt;&lt;/mark&gt; para deixar uma parte em <mark>destaque.</mark></p>
+            <p>&lt;del&gt;&lt;/del&gt; para deixar uma parte com um <del>risco.</del></p>
+        </section>
+            
+        <section>
+            <h1>A tag &lt;hr&gt; quebra uma linha fazendo uma linha embaixo</h1>
+            <p>Parágrafo 1</p>
+            <hr><hr><hr>
+            <p>Parágrafo 2</p>
+        </section>
+
+        <section>
+            <iframe width="1520" height="526" src="https://www.youtube.com/embed/zU3fgb5bPDE" title="🚨 TOCKERS FEZ UMA ANÁLISE PRECISA da LOUD do CBLOL 2024.2! O QUE ELES PRECISAM FAZER PRA MELHORAR?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+</body>
+</html>
