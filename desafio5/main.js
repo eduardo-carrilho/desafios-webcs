@@ -54,20 +54,15 @@ function exercicio7(logico1, logico2){
     }
 }
 
-let num1 = 10;
-let num2 = 20;
-let num3 = 40;
-let num4 = -11;
-let num5 = 10;
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
-//exercicio1(num1, num2, num3);
-//exercicio2(num4);
-//exercicio3(num1,num5);
-//exercicio4(num5)
+//exercicio1(10, 20, 30);
+//exercicio2(-11);
+//exercicio3(10,10);
+//exercicio4(10)
 //exercicio5(valorSalarioMinimo, valorSalarioUsuario);
-//exercicio6(num5);
+//exercicio6(10);
 exercicio7(false, false)
 
 
