@@ -163,6 +163,14 @@ function exercicio18(){
     console.log(`Demorou ${ano} anos para a Sara ficar mais alta que o Francisco.`)
 }
 
+function exercicio19(){
+    for(let i = 1; i < 11 ; i++){
+        for(let j = 1; j < 11; j++){
+            console.log(`${i} X ${j} = ${i*j}`);
+        }
+    }
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -183,7 +191,8 @@ let valorSalarioUsuario = 25864.00;
 //exercicio15(2000);
 //exercicio16(20,20,2);
 //exercicio17(122);
-exercicio18();
+//exercicio18();
+exercicio19();
 
 
 
