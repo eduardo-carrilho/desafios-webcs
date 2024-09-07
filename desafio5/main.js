@@ -171,6 +171,23 @@ function exercicio19(){
     }
 }
 
+function exercicio20(valor){
+    for(let i = 1; i < 11; i++){
+        console.log(`${valor} X ${i} = ${i*valor}`);
+    }
+}
+
+function exercicio21(){
+    let valorAleatorio = Math.floor(Math.random()*100);
+    console.log(`Valor gerado aleatoriamente é ${valorAleatorio}`);
+}
+
+function exercicio22(a, b){
+    let quociente = Math.floor(a/b);
+    let resto = a % b;
+    console.log(`O quociente da divisão é ${quociente} e o resto da divisão é ${resto}`);
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -192,7 +209,10 @@ let valorSalarioUsuario = 25864.00;
 //exercicio16(20,20,2);
 //exercicio17(122);
 //exercicio18();
-exercicio19();
+//exercicio19();
+//exercicio20(32);
+//exercicio21();
+exercicio22(10,3);
 
 
 
