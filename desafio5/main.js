@@ -144,6 +144,11 @@ function exercicio16(a, b, c){
 
 }
 
+function exercicio17(temperaturaF){
+    temperaturaC = 5*((temperaturaF-32)/9);
+    console.log(`${temperaturaF}°F é equivalente a ${temperaturaC}°C.`)
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -162,7 +167,8 @@ let valorSalarioUsuario = 25864.00;
 //exercicio13('Eduardo', 24);
 //exercicio14(1,2);
 //exercicio15(2000);
-exercicio16(20,20,2);
+//exercicio16(20,20,2);
+exercicio17(122);
 
 
 
