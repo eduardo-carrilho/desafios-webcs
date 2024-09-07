@@ -78,6 +78,14 @@ function exercicio9(peso, altura){
     }
 }
 
+function exercicio10(nota1, nota2, nota3, nota4, nomeAluno){
+    let mediaFinal = (nota1 + nota2 + nota3 + nota4)/4;
+
+    console.log(mediaFinal >=7 ? `O aluno ${nomeAluno} teve média ${mediaFinal} e foi aprovado.` : `O aluno ${nomeAluno} teve média ${mediaFinal} e foi reprovado.`)
+
+  
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -89,6 +97,7 @@ let valorSalarioUsuario = 25864.00;
 //exercicio6(10);
 //exercicio7(false, false)
 //exercicio8(3,2,1)
-exercicio9(80,1.70);
+//exercicio9(80,1.70);
+exercicio10(0, 8, 5, 7, "Eduardo Carrilho")
 
 
