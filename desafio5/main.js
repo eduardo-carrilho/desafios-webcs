@@ -149,6 +149,20 @@ function exercicio17(temperaturaF){
     console.log(`${temperaturaF}°F é equivalente a ${temperaturaC}°C.`)
 }
 
+function exercicio18(){
+    let alturaFrancisco = 150;
+    let alturaSara = 110;
+    let ano = 0;
+
+    while(alturaFrancisco >= alturaSara){
+        alturaFrancisco+=2;
+        alturaSara+=3;
+        ano+=1;
+    }
+
+    console.log(`Demorou ${ano} anos para a Sara ficar mais alta que o Francisco.`)
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -168,7 +182,8 @@ let valorSalarioUsuario = 25864.00;
 //exercicio14(1,2);
 //exercicio15(2000);
 //exercicio16(20,20,2);
-exercicio17(122);
+//exercicio17(122);
+exercicio18();
 
 
 
