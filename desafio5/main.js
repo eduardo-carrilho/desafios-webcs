@@ -101,7 +101,14 @@ function exercicio12(valor, codigo){
 }
 
 function exercicio13(nome,idade){
-    console.log(idade<18 ? `${nome} tem ${idade} anos e é menor de idade.` : `${nome} tem ${idade} anos e é maior de idade.`);
+    console.log(idade < 18 ? `${nome} tem ${idade} anos e é menor de idade.` : `${nome} tem ${idade} anos e é maior de idade.`);
+}
+
+function exercicio14(a, b){
+    let temp = a;
+    a = b;
+    b = temp;
+    console.log(a, b)
 }
 
 let valorSalarioMinimo = 1293.20;
@@ -119,6 +126,7 @@ let valorSalarioUsuario = 25864.00;
 //exercicio10(0, 8, 5);
 //exercicio11(0, 8, 5, 7, "Eduardo Carrilho");
 //exercicio12(100, 4);
-exercicio13('Eduardo', 24) 
+//exercicio13('Eduardo', 24);
+exercicio14(1,2);
 
 
