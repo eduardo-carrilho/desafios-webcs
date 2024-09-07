@@ -145,7 +145,7 @@ function exercicio16(a, b, c){
 }
 
 function exercicio17(temperaturaF){
-    temperaturaC = 5*((temperaturaF-32)/9);
+    let temperaturaC = 5*((temperaturaF-32)/9);
     console.log(`${temperaturaF}°F é equivalente a ${temperaturaC}°C.`)
 }
 
