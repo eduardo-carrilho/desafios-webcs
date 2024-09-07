@@ -54,6 +54,13 @@ function exercicio7(logico1, logico2){
     }
 }
 
+function exercicio8(valor1, valor2, valor3){
+    let numeros = [valor1, valor2, valor3];
+    numeros.sort()
+    numeros.reverse()
+    console.log(`Valores em ordem descrecente ${numeros[0]}, ${numeros[1]}, ${numeros[2]}`)
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -63,7 +70,8 @@ let valorSalarioUsuario = 25864.00;
 //exercicio4(10)
 //exercicio5(valorSalarioMinimo, valorSalarioUsuario);
 //exercicio6(10);
-exercicio7(false, false)
+//exercicio7(false, false)
+//exercicio8(3,2,1)
 
 
 
