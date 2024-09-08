@@ -166,26 +166,26 @@ function exercicio18(){
 function exercicio19(){
     for(let i = 1; i < 11 ; i++){
         for(let j = 1; j < 11; j++){
-            console.log(`${i} X ${j} = ${i*j}`);
+            console.log(`${i} X ${j} = ${i*j}.`);
         }
     }
 }
 
 function exercicio20(valor){
     for(let i = 1; i < 11; i++){
-        console.log(`${valor} X ${i} = ${i*valor}`);
+        console.log(`${valor} X ${i} = ${i*valor}.`);
     }
 }
 
 function exercicio21(){
     let valorAleatorio = Math.floor(Math.random()*100);
-    console.log(`Valor gerado aleatoriamente é ${valorAleatorio}`);
+    console.log(`Valor gerado aleatoriamente é ${valorAleatorio}.`);
 }
 
 function exercicio22(a, b){
     let quociente = Math.floor(a/b);
     let resto = a % b;
-    console.log(`O quociente da divisão é ${quociente} e o resto da divisão é ${resto}`);
+    console.log(`O quociente da divisão é ${quociente} e o resto da divisão é ${resto}.`);
 }
 
 function exercicio23(valorHoraAula, aulasLecionadas, descontoInss){
@@ -193,7 +193,15 @@ function exercicio23(valorHoraAula, aulasLecionadas, descontoInss){
         descontoInss = 1 - descontoInss/100;
     }
     let salarioLiquido = (valorHoraAula*aulasLecionadas)*descontoInss;
-    console.log(`O salário líquido do professor será ${salarioLiquido}`);
+    console.log(`O salário líquido do professor será ${salarioLiquido}.`);
+}
+
+function exercicio24(tempoGasto, distanciaPercorrida){
+    let velocidadeMedia = distanciaPercorrida/tempoGasto;
+    let combustivelGasto = distanciaPercorrida/12;
+
+    console.log(`O tempo gasto na viagem foi ${tempoGasto} horas, a velocidade média foi de ${velocidadeMedia} km/h, a distância percorrida foi ${distanciaPercorrida} kilometros e a quantidade de litros gasta foi ${combustivelGasto} litros.`)
+
 }
 
 let valorSalarioMinimo = 1293.20;
@@ -222,6 +230,7 @@ let valorSalarioUsuario = 25864.00;
 //exercicio21();
 //exercicio22(10,3);
 //exercicio23(17.95, 200, 5);
+exercicio24(6, 300);
 
 
 
