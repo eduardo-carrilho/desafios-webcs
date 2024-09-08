@@ -188,6 +188,14 @@ function exercicio22(a, b){
     console.log(`O quociente da divisão é ${quociente} e o resto da divisão é ${resto}`);
 }
 
+function exercicio23(valorHoraAula, aulasLecionadas, descontoInss){
+    if(descontoInss > 1){
+        descontoInss = 1 - descontoInss/100;
+    }
+    let salarioLiquido = (valorHoraAula*aulasLecionadas)*descontoInss;
+    console.log(`O salário líquido do professor será ${salarioLiquido}`);
+}
+
 let valorSalarioMinimo = 1293.20;
 let valorSalarioUsuario = 25864.00;
 
@@ -212,7 +220,8 @@ let valorSalarioUsuario = 25864.00;
 //exercicio19();
 //exercicio20(32);
 //exercicio21();
-exercicio22(10,3);
+//exercicio22(10,3);
+//exercicio23(17.95, 200, 5);
 
 
 
