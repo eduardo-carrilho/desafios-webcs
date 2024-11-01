@@ -1,40 +1,49 @@
-.welcome{
-    font-size: 1.5rem;
-    color: blue;
-    margin-bottom: 1.5rem;    
-}
-
-
-.tasks{
+.tasks {
     margin: 10px;
     padding: 10px 20px;
 
     border: 1px solid #605656;
     border-radius: 16px;
-    &__title{
-        font-size: 24px;
+
+    &__title {
+        font-size: 32px;
         margin-bottom: 10px;
     }
 
-    &__add{
-        border: none;
-        border-radius: 4px;
-        margin-left: 10px;
-        padding: 4px;
+    &__add {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin: 16px 0;
 
-        background-color: #605656;
-        color: white;
+        &__button {
+            border: none;
+            border-radius: 4px;
+            padding: 4px;
+            background-color: #605656;
+            color: white;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        &__input{
+            height: 24px;
+        }
+
+        &__label{
+
+        }
 
     }
 
-    &__list{
+    &__list {
         display: flex;
         flex-direction: column;
         gap: 10px;
         list-style: none;
         padding: 0;
 
-        &__item{
+        &__item {
             display: flex;
             align-items: center;
             gap: 10px;
@@ -47,7 +56,7 @@
             background-color: #605656;
             color: white;
 
-            &--done{
+            &--done {
                 background-color: #44874e;
                 text-decoration: line-through;
             }

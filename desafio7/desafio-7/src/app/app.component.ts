@@ -14,9 +14,8 @@ import { Task } from './core/models/task.model';
 })
 export class AppComponent implements OnInit{
   title: string = 'Todo List';
-  welcomeMessage: string = "Olá pessoal, como estão?";
   showList: boolean = true;
-  namesList: string[] = ['Eduardo', 'de', 'Souza', 'Carrilho']
+ 
 
   tasks: Task[] = [
     {title: 'Estudar Angular', done: false},
