@@ -1,0 +1,49 @@
+.tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: 600px;
+    gap: 32px;
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+
+
+    &__actions{
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        
+        &__input{
+            padding: 1rem;
+            height: 26px;
+            border: 2px solid blue;
+            border-radius: 4px;
+            width: 85%;
+        }
+
+        &__add{
+            text-align: center;
+            height: 35px;
+            width: 15%;
+            padding: 30px auto;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    }
+
+    &__list{
+        list-style: none;
+        width: 100%;
+    }
+}

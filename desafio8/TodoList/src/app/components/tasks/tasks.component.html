@@ -1,0 +1,16 @@
+<section class="tasks">
+
+    <h1>{{listTitle()}}</h1>
+    <div class="tasks__actions">
+        <input [(ngModel)]="task" type="text" class="tasks__actions__input"> 
+        <app-button label="Add" class="tasks__actions__add" (click)="addTask()"></app-button>
+
+    </div>
+    
+    <ul class="tasks__list">
+        @for (task of taskList; track $index) {
+            <app-task-card [item]="task" (deleteTask)="deleteTask($event)"></app-task-card>
+
+        }
+    </ul>
+</section>
