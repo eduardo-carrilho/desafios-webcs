@@ -1,0 +1,8 @@
+<li class="task">
+    <div class="task__infos" [ngClass]="{'task--done': item().done}">
+        <input type="checkbox" [(ngModel)]="item().done" (ngModelChange)="atualizar()">
+        {{item().title}}
+    </div>
+    <app-button label="Remover" buttonType="remove" (click)="remover()"></app-button>
+</li>
+
